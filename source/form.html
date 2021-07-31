@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html class="form-page" lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона: Каталог</title>
+</head>
+
+<body class="page__body form-page__body">
+    <header class="page-header">
+        <a class="page-header__logo" href="index.html">
+            <img src="img/logotype-mobile.svg.png" alt="Главный логотип">
+        </a>
+        <nav class="main-nav">
+            <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__list site-list">
+                    <li class="site-list__item site-list__item--current">
+                        <a href="#">Главная</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="#">Фото и видео</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="#">Форма отзыва</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="#">Html Academy</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-main form-main">
+        <h1 class="visually-hidden">Страница формы</h1>
+        <header class="page-main__header">
+            <h3 class="page-main__header--heading">Оставьте свой отзыв</h3>
+            <p class="page-main__header--text text">Помогите нашим отелям стать лучше!Оставьте отзыв о них,а также о посещенных вами достопримечательностях</p>
+        </header>
+        <form class="page-form" action="https://echo.htmlacademy.ru" method="GET">
+            <fieldset class="page-form__section presents-section">
+                <legend class="page-form__section--legend">Представьтес:</legend>
+                <p class="fieldset-line presents-section__line">
+                    <label for="name">Имя<sup>*</sup>:</label>
+                    <input class="presents-section__name" id="name" type="text" name="name" placeholder="Петр">
+                </p>
+                <p class="fieldset-line presents-section__line">
+                    <label for="lastname">Фамилия<sup>*</sup>:</label>
+                    <input class="presents-section__lastname" id="lastname" type="text" name="lastname" placeholder="Иванов">
+                </p>
+                <p class="fieldset-line presents-section__line">
+                    <label for="patronymic">Отчество<sup>*</sup>:</label>
+                    <input class="presents-section__patronymic" id="patronymic" type="text" name="patronymic" placeholder="Александрович">
+                </p>
+            </fieldset>
+            <fieldset class="page-form-section contact-section">
+                <legend class="page-form__section--legend">Контактная информация:</legend>
+                <p class="fieldset-line contact-section__line">
+                    <label for="phone">Контактный телефон<sup>*</sup>:</label>
+                    <input class="contact-section__phone" id="phone" type="tel" name="phone" placeholder="Введите телефон">
+                </p>
+                <p class="fieldset-line contact-section__line">
+                    <label for="email">Электронная почта<sup>*</sup>:</label>
+                    <input class="contact-section__email" id="email" type="email" name="email" placeholder="Введите e-mail">
+                </p>
+            </fieldset>
+            <fieldset class="page-form-section filter-radio">
+                <legend class="page-form__section--legend">Ваше общее впечатление:</legend>
+                <ul class="filter-radio__list">
+                    <li class="filter-radio__item">
+                        <input class="filter-radio__input visually-hidden" id="positive" type="radio" name="impression" value="positive">
+                        <label for="positive">Скорее положительное</label>
+                    </li>
+                    <li class="filter-radio__item">
+                        <input class="filter-radio__input visually-hidden" id="negative" type="radio" name="impression" value="negative">
+                        <label for="negative">Скорее отрицательное</label>
+                    </li>
+                    <li class="filter-radio__item">
+                        <input class="filter-radio__input visually-hidden" id="neutral" type="radio" name="impression" value="neutral">
+                        <label for="neutral">Затрудняюсь ответить</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="page-form-section filter-checkbox">
+                <legend class="page-form__section--legend">Ваше общее впечатление:</legend>
+                <ul class="filter-checkbox__list">
+                    <li class="filter-checkbox__item">
+                        <input class="filter-checkbox__input visually-hidden" id="bridge" type="checkbox" name="Devil Bridge">
+                        <label for="bridge">Мост Дьявола</label>
+                    </li>
+                    <li class="filter-checkbox__item">
+                        <input class="filter-checkbox__input visually-hidden" id="mount" type="checkbox" name="Mount Bell">
+                        <label for="mount">Гора-Колокол</label>
+                    </li>
+                    <li class="filter-checkbox__item">
+                        <input class="filter-checkbox__input visually-hidden" id="park" type="checkbox" name="Slide Park">
+                        <label for="park">Слайд-парк</label>
+                    </li>
+                    <li class="filter-checkbox__item">
+                        <input class="filter-checkbox__input visually-hidden" id="rocks" type="checkbox" name="Red Rocks">
+                        <label for="rocks">Красные скалы</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="page-form-section textarea-section">
+                <legend class="page-form__section--legend">Опишите свои эмоции:</legend>
+                <textarea class="textarea-section__text" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
+            </fieldset>
+            <button class="button page-form__button" type="submit">Отправить отзыв</button>
+        </form>
+    </main>
+
+    <footer class="page-footer ">
+        <h2 class="visually-hidden ">Футер сайта</h2>
+        <a class="footer-text " href="# ">&#35;Visitsedona</a>
+
+        <section class="page-footer__social ">
+            <h2 class="visually-hidden ">Давайте дружить!</h2>
+            <a class="social-link " href="https://twitter.com/?lang=ru ">Twitter</a>
+            <a class="social-link " href="https://www.facebook.com/ ">Facebook</a>
+            <a class="social-link " href="https://www.youtube.com/ ">Youtube</a>
+        </section>
+
+        <section class="page-copyright">
+            <h2 class="visually-hidden">Копирайт сайта!</h2>
+            <p class="page-copyright__text">Разработано</p>
+            <a class="page-copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+                <img class="page-copyright__icon" src="img/icon-copyright.svg" width="27" height="34" alt="Картинка копирайта">
+            </a>
+        </section>
+    </footer>
+
+    <section class="visually-hidden modal modal-failure">
+        <h2 class="modal-heading">Что-то пошло не так!</h2>
+        <p class="modal-content">Проверьте поля,выделенные красным,скорее всего вы забыли из заполныть</p>
+        <button class="button modal-button modal-failure__button" type="button">ОК</button>
+    </section>
+
+    <section class="visually-hidden modal modal-success">
+        <h2 class="modal-heading">Ваш отзыв отправлен!</h2>
+        <p class="modal-content">Спасибо за ваше участие,ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <button class="button modal-button modal-success__button" type="button">Закрыть окно</button>
+    </section>
+</body>
+
+</html>
