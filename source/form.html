@@ -3,13 +3,14 @@
 
 <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
 </head>
 
 <body class="page__body">
     <header class="page-header">
         <a class="page-header__logo" href="#">
-            <img src="img/logotype-mobile.svg.png" alt="Главный логотип">
+            <img src="img/logotype-mobile.png" alt="Главный логотип">
         </a>
         <nav class="main-nav">
             <button class="main-nav__toggle" type="button">
@@ -69,41 +70,41 @@
             </fieldset>
             <fieldset class="page-form-section filter-radio">
                 <legend class="page-form__section-legend">Ваше общее впечатление:</legend>
-                <ul class="filter-radio__list">
-                    <li class="filter-radio__item">
+                <div class="filter-radio__content">
+                    <div class="filter-radio__item">
                         <input class="filter-radio__input visually-hidden" id="positive" type="radio" name="impression" value="positive">
                         <label for="positive">Скорее положительное</label>
-                    </li>
-                    <li class="filter-radio__item">
+                    </div>
+                    <div class="filter-radio__item">
                         <input class="filter-radio__input visually-hidden" id="negative" type="radio" name="impression" value="negative">
                         <label for="negative">Скорее отрицательное</label>
-                    </li>
-                    <li class="filter-radio__item">
+                    </div>
+                    <div class="filter-radio__item">
                         <input class="filter-radio__input visually-hidden" id="neutral" type="radio" name="impression" value="neutral">
                         <label for="neutral">Затрудняюсь ответить</label>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </fieldset>
             <fieldset class="page-form-section filter-checkbox">
                 <legend class="page-form__section-legend">Ваше общее впечатление:</legend>
-                <ul class="filter-checkbox__list">
-                    <li class="filter-checkbox__item">
+                <div class="filter-checkbox__content">
+                    <div class="filter-checkbox__item">
                         <input class="filter-checkbox__input visually-hidden" id="bridge" type="checkbox" name="Devil Bridge">
                         <label for="bridge">Мост Дьявола</label>
-                    </li>
-                    <li class="filter-checkbox__item">
+                    </div>
+                    <div class="filter-checkbox__item">
                         <input class="filter-checkbox__input visually-hidden" id="mount" type="checkbox" name="Mount Bell">
                         <label for="mount">Гора-Колокол</label>
-                    </li>
-                    <li class="filter-checkbox__item">
+                    </div>
+                    <div class="filter-checkbox__item">
                         <input class="filter-checkbox__input visually-hidden" id="park" type="checkbox" name="Slide Park">
                         <label for="park">Слайд-парк</label>
-                    </li>
-                    <li class="filter-checkbox__item">
+                    </div>
+                    <div class="filter-checkbox__item">
                         <input class="filter-checkbox__input visually-hidden" id="rocks" type="checkbox" name="Red Rocks">
                         <label for="rocks">Красные скалы</label>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </fieldset>
             <fieldset class="page-form-section textarea-section">
                 <legend class="page-form__section-legend">Опишите свои эмоции:</legend>

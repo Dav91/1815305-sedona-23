@@ -3,13 +3,14 @@
 
 <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
 </head>
 
 <body class="page__body">
     <header class="page-header">
         <a class="page-header__logo" href="#">
-            <img src="img/logotype-mobile.svg.png" alt="Главный логотип">
+            <img src="img/logotype-mobile.png" alt="Главный логотип">
         </a>
         <nav class="main-nav">
             <button class="main-nav__toggle" type="button">
@@ -42,44 +43,48 @@
 
         <section class="gallery">
             <h2 class="visually-hidden">Картинки про нас</h2>
-            <ul class="gallery__list">
-                <li class="gallery__item">
+            <div class="gallery__section">
+                <article class="gallery__item">
+                    <h3 class="visually-hidden gallery__item-heading">Секция картинки Неродные просторы</h3>
                     <figure class="gallery__figure">
                         <img class="gallery__img" src="img/gallery-img-mobile-1.jpg" width="280" height="280" alt="Картинка неродные просторы">
                         <figcaption class="gallery-figcaption">Неродные просторы</figcaption>
                     </figure>
                     <p class="gallery__autor">Автор фото:<cite class="gallery__autor-name">Борис</cite></p>
                     <p class="gallery__like">1350</p>
-                </li>
-                <li class="gallery__item">
+                </article>
+                <article class="gallery__item">
+                    <h3 class="visually-hidden gallery__item-heading">Секция картинки Местная растительность</h3>
                     <figure class="gallery__figure">
                         <img class="gallery__img" src="img/gallery-img-mobile-2.jpg" width="280" height="280" alt="Картинка Местная растительность">
                         <figcaption class="gallery-figcaption">Местная растительность</figcaption>
                     </figure>
                     <p class="gallery__autor">Автор фото:<cite class="gallery__autor-name">Сергей</cite></p>
                     <p class="gallery__like">143</p>
-                </li>
-                <li class="gallery__item">
+                </article>
+                <article class="gallery__item">
+                    <h3 class="visually-hidden gallery__item-heading">Секция картинки Дорога на север</h3>
                     <figure class="gallery__figure">
                         <img class="gallery__img" src="img/gallery-img-mobile-3.jpg" width="280" height="280" alt="Картинка дорога на север">
                         <figcaption class="gallery-figcaption">Дорога на север</figcaption>
                     </figure>
                     <p class="gallery__autor">Автор фото:<cite class="gallery__autor-name">Петр</cite></p>
                     <p class="gallery__like">96</p>
-                </li>
-                <li class="gallery__item">
+                </article>
+                <article class="gallery__item">
+                    <h3 class="visually-hidden gallery__item-heading">Секция картинки Мост дьвола</h3>
                     <figure class="gallery__figure">
                         <img class="gallery__img" src="img/gallery-img-mobile-4.jpg" width="280" height="280" alt="Картинка мост дьявола">
                         <figcaption class="gallery-figcaption">Мост дьвола</figcaption>
                     </figure>
                     <p class="gallery__autor">Автор фото:<cite class="gallery__autor-name">Антон</cite></p>
                     <p class="gallery__like">254</p>
-                </li>
-            </ul>
+                </article>
+            </div>
         </section>
         <section class="video">
             <h2 class="visually-hidden">Видео про нас</h2>
-            <iframe width="320" height="201" src="https://www.youtube.com/embed/_qHjLngt7OI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="320" height="201" src="https://www.youtube.com/embed/_qHjLngt7OI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
     </main>
 
