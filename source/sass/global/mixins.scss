@@ -1,0 +1,15 @@
+@mixin reset {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin center {
+    width: 280px;
+    padding: 0 20px;
+}
+
+@mixin link {
+    display: block;
+    color: $white;
+    background-color: #81B3D2;
+}

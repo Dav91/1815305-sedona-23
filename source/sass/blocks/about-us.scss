@@ -1,0 +1,36 @@
+.about-us__content {
+    @include center;
+    text-align: center;
+}
+
+.about-us__heading {
+    @include reset;
+    font-size: 21px;
+    font-weight: 700;
+    color: $black;
+    margin-top: 33px;
+    margin-bottom: 32px;
+}
+
+.about-us__text {
+    @include reset;
+    line-height: 24px;
+    color: $black-light;
+}
+
+.about-us__link {
+    @include reset;
+    @include link;
+    width: 100%;
+    font-size: 21px;
+    font-weight: 700;
+    text-decoration: none;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    margin-top: 27px;
+    margin-bottom: 49px;
+}
+
+.about-us__map {
+    display: block;
+}

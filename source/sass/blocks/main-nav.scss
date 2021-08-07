@@ -1,0 +1,26 @@
+.main-nav__list {
+    @include reset;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 320px;
+}
+
+.site-list__item {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #81B3D2;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid fade(#010101, 20%);
+    a {
+        width: 100%;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 40px;
+        text-decoration: none;
+        color: $white;
+    }
+}

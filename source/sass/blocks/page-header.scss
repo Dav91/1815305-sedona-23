@@ -1,0 +1,40 @@
+.page-header {
+    display: flex;
+    flex-wrap: wrap;
+    &__logo {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.header-content {
+    width: 100%;
+    background: url(../../img/bcg-header-mobile.jpg);
+    &__img {
+        display: block;
+        margin: 0 auto;
+    }
+    &__line1 {
+        margin-top: 90px;
+        margin-bottom: 7px;
+    }
+    &__line2 {
+        margin-bottom: 32px;
+    }
+    &__line3 {
+        margin-bottom: 37px;
+    }
+    &__line4 {
+        margin-bottom: 85px;
+    }
+}
+
+.header-content__inner {
+    height: 156px;
+    background: url(../../img/bcg-header-mobile-inner.jpg);
+    &-img {
+        display: block;
+        margin: 0 auto;
+        margin-top: 52px;
+    }
+}

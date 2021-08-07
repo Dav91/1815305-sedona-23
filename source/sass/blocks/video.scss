@@ -1,0 +1,24 @@
+.video-content {
+    @include center;
+    text-align: center;
+}
+
+.video__heading {
+    @include reset;
+    font-size: 21px;
+    font-weight: 700;
+    color: $black;
+    margin-top: 33px;
+    margin-bottom: 32px;
+}
+
+.video__text {
+    @include reset;
+    line-height: 24px;
+    color: $black-light;
+    margin-bottom: 33px;
+}
+
+iframe {
+    border: none;
+}

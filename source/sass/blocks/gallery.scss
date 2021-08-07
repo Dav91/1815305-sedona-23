@@ -1,0 +1,50 @@
+.gallery__section {
+    @include center;
+}
+
+.gallery__item {
+    line-height: 24px;
+    padding-top: 22px;
+    padding-bottom: 15px;
+}
+
+.gallery__figure {
+    @include reset;
+}
+
+.gallery__img {
+    width: 280px;
+    height: 280px;
+}
+
+.gallery-figcaption {
+    @include reset;
+    font-weight: 700;
+    color: $black;
+}
+
+.gallery__autor {
+    @include reset;
+    text-transform: none;
+    &-name {
+        font-style: normal;
+    }
+}
+
+.gallery__like {
+    position: relative;
+    @include reset;
+    font-weight: 700;
+    margin-top: 13px;
+    margin-left: 37px;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 23px;
+        height: 21px;
+        top: -2px;
+        left: -37px;
+        background-image: url(../../img/icon-like.svg);
+        background-repeat: no-repeat;
+    }
+}
