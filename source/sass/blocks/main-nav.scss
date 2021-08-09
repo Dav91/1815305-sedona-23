@@ -14,7 +14,8 @@
     background-color: #81B3D2;
     padding-top: 10px;
     padding-bottom: 5px;
-    border-bottom: 1px solid fade(#010101, 20%);
+    border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
     a {
         width: 100%;
         font-size: 18px;
