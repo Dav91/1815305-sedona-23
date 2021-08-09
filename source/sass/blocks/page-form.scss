@@ -1,5 +1,6 @@
 .page-form {
     @include center;
+    font-size: 18px;
 }
 
 .page-form__section {
@@ -32,6 +33,7 @@
 }
 
 .fieldset-line__input {
+    width: 100px;
     @include reset;
     font-size: 18px;
     font-weight: 700;
@@ -44,14 +46,13 @@
     padding-bottom: 14px;
     padding-left: 22px;
     overflow: hidden;
+    flex-grow: 1;
     &::placeholder {
         color: inherit;
     }
 }
 
-.presents-section__input {
-    flex-grow: 1;
-}
+.presents-section__input {}
 
 .contact-section {
     margin-top: 20px;
@@ -204,8 +205,62 @@
     padding-bottom: 14px;
     margin-bottom: 48px;
     margin: 0 auto;
-    &-content {
-        display: flex;
-        justify-content: center;
+}
+
+.modal__heading {
+    @include reset;
+    font-size: 18px;
+    font-weight: 700;
+    color: $black;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 33px;
+}
+
+.modal__text {
+    @include reset;
+    line-height: 24px;
+    color: $black-light;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.modal-failure {
+    .modal__text {
+        width: 237px;
+        margin-bottom: 22px;
+    }
+}
+
+.modal-success {
+    .modal__text {
+        width: 244px;
+        margin-bottom: 28px;
+    }
+}
+
+.modal__button {
+    width: 180px;
+    @include link;
+    @include reset;
+    font-family: "PT Sans", arial, sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+    border: none;
+    padding-top: 18px;
+    padding-bottom: 14px;
+}
+
+.modal-failure {
+    .modal__button {
+        margin: 0 auto;
+    }
+}
+
+.modal-success {
+    .modal__button {
+        width: 100%;
+        border: 20px solid #F2F2F2;
     }
 }
