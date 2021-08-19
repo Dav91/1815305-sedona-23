@@ -1,9 +1,85 @@
+.main-nav {
+    position: relative;
+    width: auto;
+}
+
+.main-nav__toggle {
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    z-index: 3;
+    width: 23px;
+    height: 22px;
+    display: block;
+    border: none;
+    background-color: $white;
+    cursor: pointer;
+    @media (min-width: $tablet-width) {
+        display: none;
+    }
+}
+
+.main-nav--closed {
+    @media (max-width: $mobile-widht-only) {
+        .main-nav__wrapper {
+            display: none;
+        }
+    }
+    .main-nav__toggle::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 23px;
+        height: 4px;
+        background-color: #81B3D2;
+        box-shadow: 0 9px 0 0 #81B3D2, 0 18px 0 0 #81B3D2;
+    }
+}
+
+.main-nav--opened {
+    .main-nav__wrapper {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+    }
+    .main-nav__toggle::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 23px;
+        height: 23px;
+        background-color: #81B3D2;
+        background-image: url(../../img/icon-close.svg);
+        background-repeat: no-repeat;
+    }
+}
+
+.main-nav--nojs {
+    .main-nav__toggle {
+        display: none;
+    }
+}
+
 .main-nav__list {
     @include reset;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     width: 320px;
+    @media (min-width: $tablet-width) {
+        width: $tablet-width;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: $white;
+    }
+    @media (min-width: $desktop-width) {
+        width: $desktop-width;
+    }
 }
 
 .site-list__item {
@@ -16,6 +92,20 @@
     padding-bottom: 5px;
     border-bottom: 1px solid rgba(1, 1, 1, 0.2);
     border-top: 1px solid rgba(255, 255, 255, 0.2);
+    @media (min-width: $tablet-width) {
+        width: 153px;
+        background-color: $white;
+        border: none;
+        &:nth-child(2) {
+            margin-right: 156px;
+        }
+    }
+    @media (min-width: $desktop-width) {
+        width: 239px;
+        &:nth-child(2) {
+            margin-right: 244px;
+        }
+    }
     a {
         width: 100%;
         font-size: 18px;
@@ -23,5 +113,10 @@
         line-height: 40px;
         text-decoration: none;
         color: $white;
+        @media (min-width: $tablet-width) {
+            font-size: 14px;
+            line-height: 26px;
+            color: $black;
+        }
     }
 }

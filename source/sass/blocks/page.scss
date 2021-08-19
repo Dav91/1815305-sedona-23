@@ -1,9 +1,15 @@
 .page__body {
     width: 320px;
-    font-family: "PT Sans", arial, sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
     text-transform: uppercase;
     margin: 0 auto;
+    @media (min-width: $tablet-width) {
+        min-width: $tablet-width;
+    }
+    @media (min-width: $desktop-width) {
+        min-width: $desktop-width;
+    }
 }

@@ -142,9 +142,10 @@
     text-transform: none;
     margin-left: 74px;
     margin-bottom: 54px;
-    &-end {
-        margin-bottom: 0;
-    }
+}
+
+.filter-checkbox__label-end {
+    margin-bottom: 0;
 }
 
 .filter-checkbox__input+.filter-checkbox__label::before {

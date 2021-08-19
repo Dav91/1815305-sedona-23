@@ -26,9 +26,10 @@
 .gallery__autor {
     @include reset;
     text-transform: none;
-    &-name {
-        font-style: normal;
-    }
+}
+
+.gallery__autor-name {
+    font-style: normal;
 }
 
 .gallery__like {
