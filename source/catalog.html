@@ -3,36 +3,39 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
 </head>
 
-<body class="page__body">
+<body class="page__body page__body-inner">
     <header class="page-header">
-        <a class="page-header__logo" href="index.html">
-            <img src="img/logotype-mobile.png" alt="Главный логотип">
-        </a>
-        <nav class="main-nav">
-            <button class="main-nav__toggle" type="button">
+        <div class="help">
+            <a class="page-header__logo" href="index.html">
+                <img src="img/logotype-mobile.png" alt="Главный логотип">
+            </a>
+            <nav class="main-nav main-nav--closed">
+                <button class="main-nav__toggle" type="button">
                 <span class="visually-hidden">Открыть меню</span>
             </button>
-            <div class="visually-hidden main-nav__wrapper">
-                <ul class="main-nav__list site-list">
-                    <li class="site-list__item site-list__item--current">
-                        <a href="index.html">Главная</a>
-                    </li>
-                    <li class="site-list__item">
-                        <a href="catalog.html">Фото и видео</a>
-                    </li>
-                    <li class="site-list__item">
-                        <a href="form.html">Форма отзыва</a>
-                    </li>
-                    <li class="site-list__item">
-                        <a href="https://htmlacademy.ru/" target="_blank">Html Academy</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+                <div class="main-nav__wrapper">
+                    <ul class="main-nav__list site-list">
+                        <li class="site-list__item site-list__item--current">
+                            <a href="index.html">Главная</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a href="catalog.html">Фото и видео</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a href="form.html">Форма отзыва</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a href="https://htmlacademy.ru/" target="_blank">Html Academy</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
 
         <section class="header-content header-content__inner">
             <h2 class="visually-hidden">Welcome to the gardeous Sedona</h2>
@@ -53,7 +56,11 @@
                     <h3 class="visually-hidden gallery__item-heading">Секция картинки Неродные просторы</h3>
                     <figure class="gallery__figure">
                         <a class="gallery__img-link" href="img/gallery-img-mobile-1.jpg" target="_blank">
-                            <img class="gallery__img" src="img/gallery-img-mobile-1.jpg" width="280" height="280" alt="Картинка неродные просторы">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="img/gallery-img-desktop-1.jpg 1x, img/gallery-img-desktop-1@2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="img/gallery-img-tablet-1.jpg 1x, img/gallery-img-tablet-1@2x.jpg 2x">
+                                <img class="gallery__img" src="img/gallery-img-mobile-1.jpg" srcset="img/gallery-img-mobile-1@2x.jpg 2x" width="280" height="280" alt="Картинка неродные просторы">
+                            </picture>
                         </a>
                         <figcaption class="gallery-figcaption">Неродные просторы</figcaption>
                     </figure>
@@ -64,7 +71,11 @@
                     <h3 class="visually-hidden gallery__item-heading">Секция картинки Местная растительность</h3>
                     <figure class="gallery__figure">
                         <a class="gallery__img-link" href="img/gallery-img-mobile-2.jpg" target="_blank">
-                            <img class="gallery__img" src="img/gallery-img-mobile-2.jpg" width="280" height="280" alt="Картинка Местная растительность">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="img/gallery-img-desktop-2.jpg 1x, img/gallery-img-desktop-2@2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="img/gallery-img-tablet-2.jpg 1x, img/gallery-img-tablet-2@2x.jpg 2x">
+                                <img class="gallery__img" src="img/gallery-img-mobile-2.jpg" srcset="img/gallery-img-mobile-2@2x.jpg 2x" width="280" height="280" alt="Картинка Местная растительность">
+                            </picture>
                         </a>
                         <figcaption class="gallery-figcaption">Местная растительность</figcaption>
                     </figure>
@@ -75,7 +86,11 @@
                     <h3 class="visually-hidden gallery__item-heading">Секция картинки Дорога на север</h3>
                     <figure class="gallery__figure">
                         <a class="gallery__img-link" href="img/gallery-img-mobile-3.jpg" target="_blank">
-                            <img class="gallery__img" src="img/gallery-img-mobile-3.jpg" width="280" height="280" alt="Картинка дорога на север">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="img/gallery-img-desktop-3.jpg 1x, img/gallery-img-desktop-3@2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="img/gallery-img-tablet-3.jpg 1x, img/gallery-img-tablet-3@2x.jpg 2x">
+                                <img class="gallery__img" src="img/gallery-img-mobile-3.jpg" srcset="img/gallery-img-mobile-3@2x.jpg 2x" width="280" height="280" alt="Картинка дорога на север">
+                            </picture>
                         </a>
                         <figcaption class="gallery-figcaption">Дорога на север</figcaption>
                     </figure>
@@ -86,7 +101,11 @@
                     <h3 class="visually-hidden gallery__item-heading">Секция картинки Мост дьвола</h3>
                     <figure class="gallery__figure">
                         <a class="gallery__img-link" href="img/gallery-img-mobile-4.jpg" target="_blank">
-                            <img class="gallery__img" src="img/gallery-img-mobile-4.jpg" width="280" height="280" alt="Картинка мост дьявола">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="img/gallery-img-desktop-4.jpg 1x, img/gallery-img-desktop-4@2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="img/gallery-img-tablet-4.jpg 1x, img/gallery-img-tablet-4@2x.jpg 2x">
+                                <img class="gallery__img" src="img/gallery-img-mobile-4.jpg" srcset="img/gallery-img-mobile-4@2x.jpg 2x" width="280" height="280" alt="Картинка мост дьявола">
+                            </picture>
                         </a>
                         <figcaption class="gallery-figcaption">Мост дьвола</figcaption>
                     </figure>

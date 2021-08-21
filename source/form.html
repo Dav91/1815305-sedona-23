@@ -3,36 +3,39 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
 </head>
 
-<body class="page__body">
+<body class="page__body page__body-inner">
     <header class="page-header">
-        <a class="page-header__logo" href="index.html">
-            <img src="img/logotype-mobile.png" alt="Главный логотип">
-        </a>
-        <nav class="main-nav">
-            <button class="main-nav__toggle" type="button">
+        <div class="help">
+            <a class="page-header__logo" href="index.html">
+                <img src="img/logotype-mobile.png" alt="Главный логотип">
+            </a>
+            <nav class="main-nav main-nav--closed">
+                <button class="main-nav__toggle" type="button">
                 <span class="visually-hidden">Открыть меню</span>
             </button>
-            <div class="visually-hidden main-nav__wrapper">
-                <ul class="main-nav__list site-list">
-                    <li class="site-list__item site-list__item--current">
-                        <a href="index.html">Главная</a>
-                    </li>
-                    <li class="site-list__item">
-                        <a href="catalog.html">Фото и видео</a>
-                    </li>
-                    <li class="site-list__item">
-                        <a href="form.html">Форма отзыва</a>
-                    </li>
-                    <li class="site-list__item">
-                        <a href="https://htmlacademy.ru/" target="_blank">Html Academy</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+                <div class="main-nav__wrapper">
+                    <ul class="main-nav__list site-list">
+                        <li class="site-list__item site-list__item--current">
+                            <a href="index.html">Главная</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a href="catalog.html">Фото и видео</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a href="form.html">Форма отзыва</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a href="https://htmlacademy.ru/" target="_blank">Html Academy</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
 
         <section class="header-content header-content__inner">
             <h2 class="visually-hidden">Welcome to the gardeous Sedona</h2>

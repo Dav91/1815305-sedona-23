@@ -18,6 +18,12 @@
     @media (min-width: $tablet-width) {
         z-index: 3;
     }
+    @media (min-width: $desktop-width) {
+        width: 187px;
+        height: 97px;
+        text-align: center;
+        background-image: url(../../img/logo-bcg.png);
+    }
 }
 
 @media (min-width: $tablet-width) {
@@ -28,13 +34,13 @@
 
 .header-content {
     width: 100%;
-    background-image: url(../../img/bcg-header-mobile.jpg);
+    background-image: url(../../img/bcg-header-mobile.png);
     background-repeat: no-repeat;
     clip-path: polygon(0 0, 100% 0, 100% 93%, 50% 99%, 0 93%);
     margin: 0 auto;
     padding-bottom: 85px;
     @media (min-resolution: 2dppx) {
-        background-image: url(../../img/bcg-header-mobile@2x.jpg);
+        background-image: url(../../img/bcg-header-mobile@2x.png);
     }
 }
 
@@ -58,9 +64,14 @@
 
 @media (min-width: $tablet-width) {
     .header-content {
-        background-image: url(../../img/bcg-header-tablet.jpg);
+        background-image: url(../../img/bcg-header-tablet.png);
         background-repeat: no-repeat;
         margin-top: 8px;
+        padding-bottom: 130px;
+        @media (min-resolution: 2dppx) {
+            background-image: url(../../img/bcg-header-tablet@2x.png);
+            background-size: 768px auto;
+        }
     }
     .header-content__line1 {
         width: 188px;
@@ -82,19 +93,54 @@
 
 @media (min-width: $desktop-width) {
     .header-content {
-        background-image: url(../../img/bcg-header-desktop.jpg);
+        background-image: url(../../img/bcg-header-desktop.png);
         background-repeat: no-repeat;
         margin-top: 8px;
+    }
+    @media (min-resolution: 2dppx) {
+        background-image: url(../../img/bcg-header-desktop@2x.png);
+        background-size: 768px auto;
     }
 }
 
 .header-content__inner {
-    height: 156px;
-    background: url(../../img/bcg-header-mobile-inner.jpg);
+    min-height: 130px;
+    background: url(../../img/bcg-header-mobile-inner.png);
+    background-repeat: no-repeat;
+    @media (min-resolution: 2dppx) {
+        background-image: url(../../img/bcg-header-mobile-inner@2x.png);
+        background-size: 320px;
+    }
+    @media (min-width: $tablet-width) {
+        min-width: $tablet-width;
+        min-height: 216px;
+        background-image: url(../../img/bcg-header-tablet-inner.png);
+        clip-path: none;
+        @media (min-resolution: 2dppx) {
+            background-image: url(../../img/bcg-header-tablet-inner@2x.png);
+        }
+    }
+    @media (min-width: $desktop-width) {
+        min-height: 227px;
+        background-image: url(../../img/bcg-header-desktop-inner.png);
+        @media (min-resolution: 2dppx) {
+            background-image: url(../../img/bcg-header-desktop-inner@2x.png);
+        }
+    }
 }
 
 .header-content__inner-img {
     display: block;
     margin: 0 auto;
-    margin-top: 52px;
+    padding-top: 52px;
+    @media (min-width: $tablet-width) {
+        width: 457px;
+        height: 78px;
+        padding-top: 95px;
+    }
+    @media (min-width: $desktop-width) {
+        width: 460px;
+        height: 80px;
+        padding-top: 101px;
+    }
 }

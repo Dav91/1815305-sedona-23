@@ -10,31 +10,32 @@
 
 <body class="page__body">
     <header class="page-header">
-        <a class="page-header__logo" href="index.html">
-            <img src="img/logotype-mobile.png" alt="Главный логотип">
-        </a>
-        <nav class="main-nav main-nav--opened">
-            <button class="main-nav__toggle" type="button">
+        <div class="help">
+            <a class="page-header__logo" href="index.html">
+                <img src="img/logotype-mobile.png" alt="Главный логотип">
+            </a>
+            <nav class="main-nav main-nav--closed">
+                <button class="main-nav__toggle" type="button">
                 <span class="visually-hidden">Открыть меню</span>
             </button>
-            <div class="main-nav__wrapper">
-                <ul class="main-nav__list site-list">
-                    <li class="site-list__item site-list__item--current">
-                        <a href="index.html">Главная</a>
-                    </li>
-                    <li class="site-list__item">
-                        <a href="catalog.html">Фото и видео</a>
-                    </li>
-                    <li class="site-list__item">
-                        <a href="form.html">Форма отзыва</a>
-                    </li>
-                    <li class="site-list__item">
-                        <a href="https://htmlacademy.ru/" target="_blank">Html Academy</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
+                <div class="main-nav__wrapper">
+                    <ul class="main-nav__list site-list">
+                        <li class="site-list__item site-list__item--current">
+                            <a href="index.html">Главная</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a href="catalog.html">Фото и видео</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a href="form.html">Форма отзыва</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a href="https://htmlacademy.ru/" target="_blank">Html Academy</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
         <section class="header-content">
             <h2 class="visually-hidden">Welcome to the gardeous Sedona</h2>
             <img class="header-content__line1 header-content__img" src="img/welcome.svg" width="116" height="28" alt="Welcome">
@@ -42,8 +43,8 @@
             <img class="header-content__line3 header-content__img" src="img/sedona.svg" width="282" height="49" alt="sedona">
             <img class="header-content__line4 header-content__img" src="img/because-the-grand.svg" width="173" height="46" alt="Becouse the grand lanyon sucks">
         </section>
-
     </header>
+
     <main class="page-main">
         <h1 class="visually-hidden">Туристический город Седона</h1>
         <header class="page-main__header">
@@ -54,7 +55,7 @@
             <h2 class="visually-hidden">Наши преимущества</h2>
             <article class="advantages-section">
                 <header class="advantages-section__header">
-                    <div class="advantages-section__header-content advantages-section__header-content-lightblue advantages-section__header-content--first">
+                    <div class="advantages-section__header-content advantages-section__header-content-lightblue">
                         <h3 class="advantages-section__header-heading">Настоящий городок</h3>
                         <p class="advantages-section__header-text  advantages-section__header-number">№1</p>
                         <p class="advantages-section__header-text">Седона не аттракцион для туристов, там течет своя жизнь</p>
@@ -80,7 +81,7 @@
                             <p class="advantages-section__item-text">Не только Китайского, но и местного производства!</p>
                         </div>
                     </div>
-                    <div class="advantages-section__item advantages-section__item--last">
+                    <div class="advantages-section__item">
                         <img class="advantages-section__item-icon" src="img/icon-burger.svg" width="40" height="35" alt="Иконка бургер">
                         <div class="advantages-section__item-content">
                             <h3 class="advantages-section__item-heading advantages-section__item-heading--burger">Еда</h3>
@@ -90,17 +91,17 @@
                 </div>
             </article>
 
-            <article class="advantages-section">
-                <header class="advantages-section__header advantages-section__header--last">
-                    <div class="advantages-section__header-content advantages-section__header-content-lightblue advantages-section__header-content--last">
+            <article class="advantages-section advantages-section-bridge">
+                <header class="advantages-section__header">
+                    <div class="advantages-section__header-content advantages-section__header-content-lightblue">
                         <h3 class="advantages-section__header-heading">Там есть мост дьявола</h3>
                         <p class="advantages-section__header-text  advantages-section__header-number">№2</p>
                         <p class="advantages-section__header-text">Да,по нему можно пройти! Если вы осмелитесь,конечно</p>
                     </div>
                     <picture>
-                        <source class="(min-width: 1200px)" srcset="img/advantages-img2-desktop.jpg 1x, img/advantages-img2-desktop@2x.jpg 2x">
+                        <source media="(min-width: 1200px)" srcset="img/advantages-img2-desktop.jpg 1x, img/advantages-img2-desktop@2x.jpg 2x">
                         <source media="(min-width: 768px)" srcset="img/advantages-img2-tablet.jpg 1x, img/advantages-img2-tablet@2x.jpg 2x">
-                        <img class="advantages-section__img" src="img/advantages-img2-mobile.jpg" srcset="img/advantages-img2-mobile@2x.jpg 2x" width="320" height="260" alt="Настоящий городок первая картинка">
+                        <img class="advantages-section__img" src="img/advantages-img2-mobile.jpg" srcset="img/advantages-img2-mobile@2x.jpg 2x" width="320" height="260" alt="Картинка Мост Дьявола">
                     </picture>
                 </header>
             </article>

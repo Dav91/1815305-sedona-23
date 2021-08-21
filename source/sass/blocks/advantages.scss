@@ -1,12 +1,20 @@
+.advantages {
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0, 50% 1%);
+    @media (min-width: $tablet-width) {
+        clip-path: none;
+    }
+}
+
 .advantages-section__header {
     margin-bottom: 35px;
-    &--last {
-        margin-bottom: 0;
-    }
     @media (min-width: $tablet-width) {
         display: grid;
         grid-template-columns: 1fr 2fr;
     }
+}
+
+.advantages-section-bridge .advantages-section__header {
+    margin-bottom: 0;
 }
 
 .advantages-section__header-content {
@@ -14,32 +22,15 @@
     background-color: #EEEEEE;
     padding-top: 26px;
     padding-bottom: 24px;
-    /*
-    &--first {
-        clip-path: polygon(0 2%, 50% 8%, 100% 3%, 100% 100%, 0 100%);
-        @media (min-width: $tablet-width) {
-            clip-path: none;
-        }
-    }
-    */
-    &--last {
-        padding-top: 39px;
-        @media (min-width: $tablet-width) {
-            order: 2;
-        }
-    }
-    &:first-child {
-        clip-path: polygon(0 2%, 50% 8%, 100% 3%, 100% 100%, 0 100%);
-        @media (min-width: $tablet-width) {
-            clip-path: none;
-        }
-    }
 }
 
 @media (min-width: $tablet-width) {
     .advantages__inner-sections .advantages-section__header-content {
         height: 256px;
         box-sizing: border-box;
+    }
+    .advantages-section-bridge .advantages-section__header-content {
+        order: 2;
     }
 }
 
@@ -111,9 +102,6 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 26px;
-    &--last {
-        margin-bottom: 35px;
-    }
 }
 
 @media (min-width: $tablet-width) {
@@ -124,16 +112,25 @@
         justify-content: space-between;
         align-items: center;
     }
+    .advantages-section__item:nth-child(1) img {
+        width: 75px;
+        height: 72px;
+    }
+    .advantages-section__item:nth-child(2) img {
+        width: 64px;
+        height: 75px;
+    }
+    .advantages-section__item:nth-child(3) img {
+        width: 76px;
+        height: 68px;
+    }
 }
 
 .advantages-section__item-icon {
     margin-right: 9px;
     @media (min-width: $tablet-width) {
         margin-right: 0;
-        &:first-child {
-            width: 75px;
-            height: 72px;
-        }
+        margin-bottom: 22px;
     }
 }
 
