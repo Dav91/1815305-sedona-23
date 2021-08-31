@@ -1,6 +1,8 @@
 .main-nav {
-    position: relative;
-    width: auto;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
 }
 
 .main-nav__toggle {
@@ -12,7 +14,6 @@
     height: 22px;
     display: block;
     border: none;
-    background-color: $white;
     cursor: pointer;
     @media (min-width: $tablet-width) {
         display: none;
@@ -35,6 +36,12 @@
         background-color: #81B3D2;
         box-shadow: 0 9px 0 0 #81B3D2, 0 18px 0 0 #81B3D2;
     }
+    .main-nav__toggle:hover::before {
+        opacity: 0.6;
+    }
+    .main-nav__toggle:active::before {
+        opacity: 0.3;
+    }
 }
 
 .main-nav--opened {
@@ -56,6 +63,12 @@
         background-color: #81B3D2;
         background-image: url(../../img/icon-close.svg);
         background-repeat: no-repeat;
+    }
+    .main-nav__toggle:hover::before {
+        background-image: url(../../img/icon-close-hover.svg);
+    }
+    .main-nav__toggle:active::before {
+        background-image: url(../../img/icon-close-active.svg);
     }
 }
 
@@ -92,12 +105,30 @@
     padding-bottom: 5px;
     border-bottom: 1px solid rgba(1, 1, 1, 0.2);
     border-top: 1px solid rgba(255, 255, 255, 0.2);
+    &:hover {
+        background-color: #669EC0;
+    }
+    &:active {
+        a {
+            opacity: 0.3;
+        }
+    }
     @media (min-width: $tablet-width) {
         width: 153px;
         background-color: $white;
         border: none;
         &:nth-child(2) {
             margin-right: 156px;
+        }
+        &:hover {
+            background-color: $white;
+        }
+        &:hover a {
+            color: #81B3D2;
+        }
+        &:active a {
+            color: $black;
+            opacity: 0.3;
         }
     }
     @media (min-width: $desktop-width) {
@@ -106,17 +137,24 @@
             margin-right: 244px;
         }
     }
-    a {
-        width: 100%;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 40px;
-        text-decoration: none;
-        color: $white;
-        @media (min-width: $tablet-width) {
-            font-size: 14px;
-            line-height: 26px;
-            color: $black;
-        }
+}
+
+.site-list__item a {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 40px;
+    text-decoration: none;
+    color: $white;
+    @media (min-width: $tablet-width) {
+        font-size: 14px;
+        line-height: 26px;
+        color: $black;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .site-list__item--current a {
+        color: #766357;
     }
 }

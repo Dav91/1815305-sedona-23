@@ -15,7 +15,7 @@
     }
 }
 
-.footer-text {
+.page-footer__text {
     display: block;
     @include reset;
     font-size: 21px;
@@ -48,6 +48,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    &:active {
+        svg {
+            opacity: 0.3;
+        }
+        path {
+            opacity: 0.3;
+        }
+    }
 }
 
 .page-copyright {
@@ -69,4 +77,16 @@
 
 .page-copyright__link {
     @include reset;
+    display: flex;
+    &:hover .icon-copyright {
+        fill: #81B3D2;
+    }
+    &:active svg {
+        fill: #000000;
+        opacity: 0.3;
+    }
+}
+
+.page-copyright__icon {
+    display: block;
 }
