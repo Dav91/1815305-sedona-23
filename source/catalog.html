@@ -27,7 +27,10 @@
     <header class="page-header">
         <div class="page-header__top">
             <a class="page-header__logo" href="index.html">
-                <img src="img/logotype-mobile.png" alt="Главный логотип">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="img/logotype-desktop.png">
+                    <img src="img/logotype-mobile.png" alt="Главный логотип">
+                </picture>
             </a>
             <nav class="main-nav main-nav--closed">
                 <button class="main-nav__toggle" type="button">
@@ -80,7 +83,7 @@
                         </a>
                         <div class="gallery__footer">
                             <div class="gallery__description">
-                                <figcaption class="gallery__figcaption">Неродные просторы</figcaption>
+                                <p class="gallery__figcaption">Неродные просторы</p>
                                 <p class="gallery__autor">Автор фото: <cite class="gallery__autor-name">Борис</cite></p>
                             </div>
                             <p class="gallery__like">1350</p>
@@ -100,7 +103,7 @@
                         </a>
                         <div class="gallery__footer">
                             <div class="gallery__description">
-                                <figcaption class="gallery__figcaption">Местная растительность</figcaption>
+                                <p class="gallery__figcaption">Местная растительность</p>
                                 <p class="gallery__autor">Автор фото: <cite class="gallery__autor-name">Сергей</cite></p>
                             </div>
                             <p class="gallery__like">143</p>
@@ -120,7 +123,7 @@
                         </a>
                         <div class="gallery__footer">
                             <div class="gallery__description">
-                                <figcaption class="gallery__figcaption">Дорога на север</figcaption>
+                                <p class="gallery__figcaption">Дорога на север</p>
                                 <p class="gallery__autor">Автор фото: <cite class="gallery__autor-name">Петр</cite></p>
                             </div>
                             <p class="gallery__like">96</p>
@@ -140,7 +143,7 @@
                         </a>
                         <div class="gallery__footer">
                             <div class="gallery__description">
-                                <figcaption class="gallery__figcaption">Мост дьвола</figcaption>
+                                <p class="gallery__figcaption">Мост дьвола</p>
                                 <p class="gallery__autor">Автор фото: <cite class="gallery__autor-name">Антон</cite></p>
                             </div>
                             <p class="gallery__like">254</p>

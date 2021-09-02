@@ -26,7 +26,10 @@
     <header class="page-header">
         <div class="page-header__top">
             <a class="page-header__logo" href="index.html">
-                <img src="img/logotype-mobile.png" alt="Главный логотип">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="img/logotype-desktop.png">
+                    <img src="img/logotype-mobile.png" alt="Главный логотип">
+                </picture>
             </a>
             <nav class="main-nav main-nav--opened">
                 <button class="main-nav__toggle" type="button">
