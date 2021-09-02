@@ -63,11 +63,14 @@
 }
 
 .video__player {
-    @include center;
+    width: 280px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 16px 1fr 32px 20px;
     position: relative;
     top: -45px;
+    background-color: #F2F2F2;
+    padding-bottom: 24px;
     @media (min-width: $tablet-width) {
         width: 100%;
         top: -93px;
@@ -75,6 +78,7 @@
         box-sizing: border-box;
         background-color: rgba(0, 0, 0, 0.6);
         align-items: center;
+        justify-items: center;
     }
     @media (min-width: $desktop-width) {
         width: 800px;
@@ -102,6 +106,8 @@
     }
 }
 
+
+/*
 .video__scroll {
     order: -1;
     grid-column: 1/-1;
@@ -117,6 +123,54 @@
         order: 0;
         @include reset;
         background-color: transparent;
+    }
+}
+*/
+
+.video__scroll {
+    width: 100%;
+    position: relative;
+    order: -1;
+    grid-column: 1/-1;
+    padding-top: 22px;
+    padding-bottom: 20px;
+    padding-left: 22px;
+    padding-right: 23px;
+    margin-bottom: 22px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    @media (min-width: $tablet-width) {
+        width: 389px;
+        grid-column: unset;
+        order: 0;
+        @include reset;
+        background-color: transparent;
+    }
+    @media (min-width: $desktop-width) {
+        width: 540px;
+    }
+}
+
+.video__line {
+    width: 235px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.2);
+    @media (min-width: $tablet-width) {
+        width: 100%;
+    }
+}
+
+.video__circle {
+    position: absolute;
+    top: 17px;
+    left: 56px;
+    width: 13px;
+    height: 13px;
+    background-color: $white;
+    border-radius: 50%;
+    @media (min-width: $tablet-width) {
+        top: -5px;
+        left: 105px;
     }
 }
 

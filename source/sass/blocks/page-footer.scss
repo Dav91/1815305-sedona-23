@@ -7,11 +7,12 @@
         padding-top: 36px;
         padding-right: 60px;
         padding-bottom: 36px;
-        padding-left: 45px;
+        padding-left: 60px;
     }
     @media (min-width: $desktop-width) {
         padding-right: 120px;
-        padding-left: 104px;
+        padding-left: 119px;
+        padding-top: 38px;
     }
 }
 
@@ -35,7 +36,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto;
-    margin-bottom: 37px;
+    margin-bottom: 39px;
     @media (min-width: $tablet-width) {
         margin: 0;
     }
@@ -48,13 +49,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    &:active {
-        svg {
-            opacity: 0.3;
-        }
-        path {
-            opacity: 0.3;
-        }
+    &:active svg {
+        opacity: 0.3;
     }
 }
 
@@ -78,7 +74,8 @@
 .page-copyright__link {
     @include reset;
     display: flex;
-    &:hover .icon-copyright {
+    fill: $black;
+    &:hover svg {
         fill: #81B3D2;
     }
     &:active svg {

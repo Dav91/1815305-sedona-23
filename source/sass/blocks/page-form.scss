@@ -18,7 +18,7 @@
         border: none;
     }
 
-    .page-form__section-legend {
+    .page-form__legend {
         @include reset;
         font-size: 18px;
         font-weight: 700;
@@ -95,7 +95,7 @@
         margin-top: 20px;
         padding-bottom: 28px;
         border-bottom: 1px solid #E5E5E5;
-        .page-form__section-legend {
+        .page-form__legend {
             margin-bottom: 17px;
             @media (min-width: $tablet-width) {
                 width: 100%;
@@ -264,7 +264,7 @@
         margin-top: 15px;
         padding-bottom: 30px;
         border-bottom: 1px solid #E5E5E5;
-        .page-form__section-legend {
+        .page-form__legend {
             margin-bottom: 36px;
             @media (min-width: $tablet-width) {
                 margin-bottom: 59px;
@@ -358,7 +358,7 @@
 
     .textarea-section {
         margin-top: 20px;
-        .page-form__section-legend {
+        .page-form__legend {
             margin-bottom: 15px;
             @media (min-width: $tablet-width) {
                 margin-bottom: 55px;

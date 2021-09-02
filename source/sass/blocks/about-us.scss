@@ -17,6 +17,8 @@
     margin-bottom: 21px;
     @media (min-width: $tablet-width) {
         font-size: 30px;
+        margin-top: 58px;
+        margin-bottom: 32px;
     }
 }
 
@@ -42,6 +44,14 @@
     padding-bottom: 17px;
     margin-top: 27px;
     margin-bottom: 49px;
+    @media (min-width: $tablet-width) {
+        margin-top: 39px;
+        margin-bottom: 58px;
+    }
+    @media (min-width: $desktop-width) {
+        margin-top: 42px;
+        margin-bottom: 65px;
+    }
 }
 
 .about-us__map {
