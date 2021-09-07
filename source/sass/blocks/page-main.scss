@@ -1,5 +1,5 @@
     .page-main {
-        margin-top: 31px;
+        margin-top: 27px;
         @media (min-width: $tablet-width) {
             margin-top: 4px;
         }
@@ -10,25 +10,38 @@
 
     .inner-main {
         line-height: 24px;
+        margin-top: 31px;
         @media (min-width: $tablet-width) {
             width: 648px;
             padding: 0 60px;
+            margin-top: 7px;
         }
         @media (min-width: $desktop-width) {
             width: 1200px;
             padding: 0;
+            margin-top: 15px;
+        }
+    }
+
+    .form-main {
+        margin-top: 34px;
+        @media (min-width: $tablet-width) {
+            margin-top: 37px;
+        }
+        @media (min-width: $desktop-width) {
+            margin-top: 85px;
         }
     }
 
     .main-header {
         @include center;
-        margin-bottom: 32px;
+        margin-bottom: 35px;
         @media (min-width: $tablet-width) {
             width: 490px;
             padding: 0;
             margin-left: auto;
             margin-right: auto;
-            margin-bottom: 55px;
+            margin-bottom: 51px;
         }
         @media (min-width: $desktop-width) {
             margin-bottom: 42px;
@@ -41,15 +54,22 @@
         border-bottom: 1px solid #E5E5E5;
         @media (min-width: $tablet-width) {
             border-bottom: none;
-            margin-bottom: 60px;
+            margin-bottom: 71px;
+        }
+        @media (min-width: $desktop-width) {
+            margin-bottom: 42px;
         }
     }
 
     .inner-main .main-header {
         width: auto;
         padding: 0;
+        border-bottom: 1px solid #E5E5E5;
+        margin-bottom: 0;
+        padding-bottom: 30px;
         @media (min-width: $tablet-width) {
-            margin-bottom: 64px;
+            margin-bottom: 48px;
+            border-bottom: none;
         }
     }
 
@@ -77,6 +97,10 @@
         }
     }
 
+    .form-main .main-header__text {
+        line-height: 24px;
+    }
+
     .main-header__heading {
         width: 260px;
         @include reset;
@@ -89,11 +113,20 @@
         @media (min-width: $tablet-width) {
             width: inherit;
             font-size: 21px;
+            margin-bottom: 32px;
         }
     }
 
     .page-inner .main-header__heading {
         @media (min-width: $tablet-width) {
             font-size: 30px;
+            margin-bottom: 34px;
+        }
+    }
+
+    .form-main .main-header__heading {
+        margin-bottom: 28px;
+        @media (min-width: $tablet-width) {
+            margin-bottom: 33px;
         }
     }

@@ -1,5 +1,12 @@
 .video {
     text-align: center;
+    margin-bottom: 115px;
+    @media (min-width: $tablet-width) {
+        margin-bottom: 40px;
+    }
+    @media (min-width: $desktop-width) {
+        margin-bottom: 82px;
+    }
 }
 
 .video__content {
@@ -13,6 +20,7 @@
 }
 
 .video__iframe {
+    position: relative;
     @media (min-width: $desktop-width) {
         width: 800px;
         margin: 0 auto;
@@ -25,13 +33,14 @@
     font-weight: 700;
     line-height: 26px;
     color: $black;
-    margin-top: 33px;
-    margin-bottom: 32px;
+    margin-top: 32px;
+    margin-bottom: 28px;
     @media (min-width: $tablet-width) {
         font-size: 30px;
         margin-top: 59px;
+        margin-bottom: 33px;
     }
-    @media (min-width: $tablet-width) {
+    @media (min-width: $desktop-width) {
         margin-top: 63px;
     }
 }
@@ -45,6 +54,10 @@
     margin-right: auto;
     @media (min-width: $tablet-width) {
         width: 450px;
+        margin-bottom: 80px;
+    }
+    @media (min-width: $desktop-width) {
+        margin-bottom: 78px;
     }
 }
 
@@ -67,13 +80,15 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: 16px 1fr 32px 20px;
-    position: relative;
-    top: -45px;
+    position: absolute;
+    bottom: -66px;
+    left: 20px;
     background-color: #F2F2F2;
     padding-bottom: 24px;
     @media (min-width: $tablet-width) {
         width: 100%;
-        top: -93px;
+        bottom: 0;
+        left: 0;
         padding: 35px 41px 37px 35px;
         box-sizing: border-box;
         background-color: rgba(0, 0, 0, 0.6);
@@ -145,6 +160,7 @@
         order: 0;
         @include reset;
         background-color: transparent;
+        margin-right: 32px;
     }
     @media (min-width: $desktop-width) {
         width: 540px;
@@ -164,20 +180,20 @@
     position: absolute;
     top: 17px;
     left: 56px;
-    width: 13px;
-    height: 13px;
+    width: 10px;
+    height: 10px;
     background-color: $white;
     border-radius: 50%;
     @media (min-width: $tablet-width) {
-        top: -5px;
-        left: 105px;
+        top: -3px;
+        left: 112px;
     }
 }
 
 .video__subtitles {
-    margin-left: 149px;
+    margin-left: 158px;
     @media (min-width: $tablet-width) {
-        width: 82px;
+        width: 94px;
         justify-self: self-end;
         margin-left: 0;
     }

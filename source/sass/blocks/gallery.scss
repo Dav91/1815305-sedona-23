@@ -1,5 +1,8 @@
 .gallery {
-    @include center;
+    margin: 0 auto;
+    @media (min-width: $tablet-width) {
+        padding: 0;
+    }
 }
 
 @media (min-width: $tablet-width) {
@@ -21,8 +24,6 @@
 
 .gallery__item {
     line-height: 24px;
-    padding-top: 22px;
-    padding-bottom: 15px;
     @media (min-width: $tablet-width) {
         padding: 0;
     }
@@ -30,6 +31,15 @@
 
 .gallery__figure {
     @include reset;
+    @include center;
+    border-bottom: 1px solid #E5E5E5;
+    padding-bottom: 17px;
+    padding-top: 23px;
+    @media (min-width: $tablet-width) {
+        width: auto;
+        padding: 0;
+        border-bottom: none;
+    }
     @media (min-width: $desktop-width) {
         position: relative;
     }
@@ -93,22 +103,32 @@
         left: -37px;
         background-image: url(../../img/icon-like.svg);
         background-repeat: no-repeat;
+        @media (min-width: $tablet-width) {
+            top: 2px;
+            left: -32px;
+        }
         @media (min-width: $desktop-width) {
             background-image: url(../../img/icon-like-desktop.svg);
         }
     }
+    @media (min-width: $tablet-width) {
+        margin: 0;
+        padding: 0;
+    }
 }
 
 .gallery__footer {
+    margin-top: 9px;
     @media (min-width: $tablet-width) {
         display: flex;
         justify-content: space-between;
         align-items: center;
         background-color: #EAEAEA;
-        padding-top: 11px;
+        padding-top: 16px;
         padding-right: 20px;
         padding-bottom: 15px;
         padding-left: 20px;
+        margin-top: 0;
     }
     @media (min-width: $desktop-width) {
         width: 100%;
@@ -117,5 +137,11 @@
         color: $white;
         background-color: rgba(0, 0, 0, 0.3);
         box-sizing: border-box;
+    }
+}
+
+.gallery__footer--small {
+    @media (min-width: $tablet-width) {
+        padding-right: 29px;
     }
 }
