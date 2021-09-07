@@ -20,7 +20,7 @@
 
 .page-inner-form .page-header__top {
     @media (min-width: $tablet-width) {
-        margin-bottom: -38px;
+        margin-bottom: -34px;
     }
 }
 
@@ -33,11 +33,12 @@
     @media (min-width: $tablet-width) {
         z-index: 3;
     }
+}
+
+.page-header__logo img {
     @media (min-width: $desktop-width) {
         width: 187px;
         height: 97px;
-        text-align: center;
-        background-image: url(../../img/logo-bcg.png);
     }
 }
 
@@ -118,7 +119,7 @@
     .header-content {
         background-image: url(../../img/bcg-header-desktop.png);
         background-repeat: no-repeat;
-        margin-top: -40px;
+        margin-top: -49px;
     }
     .header-content__line1 {
         padding-top: 77px;
@@ -165,7 +166,7 @@
 
 .header-form {
     @media (min-width: $tablet-width) {
-        padding-bottom: 101px;
+        padding-bottom: 97px;
     }
 }
 
@@ -174,9 +175,9 @@
     margin: 0 auto;
     padding-top: 52px;
     @media (min-width: $tablet-width) {
-        width: 457px;
-        height: 78px;
-        padding-top: 95px;
+        width: 459px;
+        height: 85px;
+        padding-top: 89px;
     }
     @media (min-width: $desktop-width) {
         width: 460px;

@@ -251,6 +251,14 @@
     }
 }
 
+.advantages-section__item-icon--gift {
+    @media (max-width: $mobile-widht-only) {
+        margin-right: 13px;
+        margin-top: -10px;
+        margin-left: 5px;
+    }
+}
+
 @media (min-width: $tablet-width) {
     .advantages-section__content {
         text-align: center;
