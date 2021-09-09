@@ -61,14 +61,14 @@
         width: 23px;
         height: 23px;
         background-color: #81B3D2;
-        background-image: url(../../img/icon-close.svg);
+        background-image: url(../img/icon-close.svg);
         background-repeat: no-repeat;
     }
     .main-nav__toggle:hover::before {
-        background-image: url(../../img/icon-close-hover.svg);
+        background-image: url(../img/icon-close-hover.svg);
     }
     .main-nav__toggle:active::before {
-        background-image: url(../../img/icon-close-active.svg);
+        background-image: url(../img/icon-close-active.svg);
     }
 }
 

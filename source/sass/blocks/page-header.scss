@@ -42,21 +42,15 @@
     }
 }
 
-@media (min-width: $tablet-width) {
-    .main-nav__toggle {
-        display: none;
-    }
-}
-
 .header-content {
     width: 100%;
-    background-image: url(../../img/bcg-header-mobile.png);
+    background-image: url(../img/bcg-header-mobile.png);
     background-repeat: no-repeat;
     clip-path: polygon(0 0,100% 0,100% 92%,50% 99%,0 92%);
     margin: 0 auto;
     padding-bottom: 86px;
     @media (min-resolution: 2dppx) {
-        background-image: url(../../img/bcg-header-mobile@2x.png);
+        background-image: url(../img/bcg-header-mobile@2x.png);
     }
 }
 
@@ -84,11 +78,11 @@
 
 @media (min-width: $tablet-width) {
     .header-content {
-        background-image: url(../../img/bcg-header-tablet.png);
+        background-image: url(../img/bcg-header-tablet.png);
         background-repeat: no-repeat;
         padding-bottom: 130px;
         @media (min-resolution: 2dppx) {
-            background-image: url(../../img/bcg-header-tablet@2x.png);
+            background-image: url(../img/bcg-header-tablet@2x.png);
             background-size: 768px auto;
         }
     }
@@ -117,7 +111,7 @@
 
 @media (min-width: $desktop-width) {
     .header-content {
-        background-image: url(../../img/bcg-header-desktop.png);
+        background-image: url(../img/bcg-header-desktop.png);
         background-repeat: no-repeat;
         margin-top: -49px;
     }
@@ -128,38 +122,38 @@
         margin-left: 443px;
     }
     @media (min-resolution: 2dppx) {
-        background-image: url(../../img/bcg-header-desktop@2x.png);
+        background-image: url(../img/bcg-header-desktop@2x.png);
         background-size: 768px auto;
     }
 }
 
 .header-inner {
     min-height: 130px;
-    background: url(../../img/bcg-header-mobile-inner.png);
+    background: url(../img/bcg-header-mobile-inner.png);
     clip-path: polygon(0 0,100% 0,100% 83%,50% 99%,0 83%);
     background-repeat: no-repeat;
     padding-bottom: 29px;
     @media (min-resolution: 2dppx) {
-        background-image: url(../../img/bcg-header-mobile-inner@2x.png);
+        background-image: url(../img/bcg-header-mobile-inner@2x.png);
         background-size: 320px;
     }
     @media (min-width: $tablet-width) {
         min-width: $tablet-width;
         min-height: 216px;
-        background-image: url(../../img/bcg-header-tablet-inner.png);
+        background-image: url(../img/bcg-header-tablet-inner.png);
         background-position: 0 -58px;
         clip-path: none;
         padding-bottom: 130px;
         @media (min-resolution: 2dppx) {
-            background-image: url(../../img/bcg-header-tablet-inner@2x.png);
+            background-image: url(../img/bcg-header-tablet-inner@2x.png);
         }
     }
     @media (min-width: $desktop-width) {
         min-height: 227px;
-        background-image: url(../../img/bcg-header-desktop-inner.png);
+        background-image: url(../img/bcg-header-desktop-inner.png);
         padding-bottom: 159px;
         @media (min-resolution: 2dppx) {
-            background-image: url(../../img/bcg-header-desktop-inner@2x.png);
+            background-image: url(../img/bcg-header-desktop-inner@2x.png);
         }
     }
 }
