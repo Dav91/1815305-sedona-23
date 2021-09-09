@@ -29,6 +29,8 @@
     font-weight: 700;
     color: $black;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     @media (min-width: $tablet-width) {
         font-size: 21px;
     }
@@ -104,6 +106,7 @@
     margin-bottom: 22px;
     @media (min-width: $tablet-width) {
         text-align: start;
+        margin-left: 0;
         margin-bottom: 57px;
     }
 }
@@ -292,6 +295,8 @@
 .filter-radio legend {
     @media (min-width: $tablet-width) {
         text-align: start;
+        margin-left: 0;
+        margin-right: 0;
         margin-bottom: 35px;
     }
     @media (min-width: $desktop-width) {
@@ -485,6 +490,7 @@
     }
     @media (min-width: $desktop-width) {
         margin-bottom: 62px;
+        padding-right: 0;
     }
 }
 
