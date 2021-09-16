@@ -1,0 +1,33 @@
+.page-copyright {
+    width: 127px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    @media (min-width: $tablet-width) {
+        margin: 0;
+    }
+}
+
+.page-copyright__text {
+    @include reset;
+    color: $black;
+}
+
+.page-copyright__link {
+    @include reset;
+    display: flex;
+    fill: $black;
+    &:hover svg {
+        fill: #81B3D2;
+    }
+    &:active svg {
+        fill: #000000;
+        opacity: 0.3;
+    }
+}
+
+.page-copyright__icon {
+    display: block;
+}

@@ -1,0 +1,10 @@
+.warning {
+    display: none;
+    @media (min-width: $tablet-width) {
+        display: block;
+        order: 7;
+        justify-self: end;
+        font-size: 14px;
+        margin-top: 18px;
+    }
+}

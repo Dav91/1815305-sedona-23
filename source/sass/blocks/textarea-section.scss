@@ -1,0 +1,54 @@
+.textarea-section {
+    margin-top: 20px;
+    .page-form__legend {
+        margin-bottom: 15px;
+        @media (min-width: $tablet-width) {
+            margin-bottom: 55px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            &::before,
+            &::after {
+                content: "";
+                flex-grow: 1;
+                flex-shrink: 0;
+                height: 1px;
+                background-color: #DBDBDB;
+            }
+            &::before {
+                margin-right: 62px;
+            }
+            &::after {
+                margin-left: 62px;
+            }
+        }
+    }
+    @media (min-width: $tablet-width) {
+        width: 100%;
+        order: 5;
+        grid-column: 1/-1;
+    }
+}
+
+.textarea-section__text {
+    width: 279px;
+    height: 160px;
+    resize: none;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    color: $black;
+    border: none;
+    box-sizing: border-box;
+    background-color: #F2F2F2;
+    padding: 13px 23px 29px 21px;
+    margin-bottom: 44px;
+    &::placeholder {
+        color: inherit;
+    }
+    @media (min-width: $tablet-width) {
+        width: 100%;
+        padding-top: 17px;
+        margin-bottom: 51px;
+    }
+}

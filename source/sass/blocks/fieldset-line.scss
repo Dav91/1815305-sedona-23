@@ -1,0 +1,23 @@
+.fieldset-line {
+    @include reset;
+}
+
+.fieldset-line__input {
+    width: 100px;
+    @include reset;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    color: $black;
+    background-color: #F2F2F2;
+    border: none;
+    padding-top: 16px;
+    padding-right: 10px;
+    padding-bottom: 14px;
+    padding-left: 22px;
+    overflow: hidden;
+    flex-grow: 1;
+    &::placeholder {
+        color: inherit;
+    }
+}

@@ -1,0 +1,41 @@
+.modal-failure {
+    padding: 40px 42px 35px 42px;
+    margin-top: 116px;
+    box-sizing: border-box;
+    @media (min-width: $tablet-width) {
+        width: 400px;
+        padding: 49px 47px 49px 47px;
+        margin-top: 209px;
+    }
+    @media (min-width: $desktop-width) {
+        margin-top: 236px;
+    }
+    .modal__text {
+        margin-bottom: 22px;
+        @media (min-width: $tablet-width) {
+            margin-bottom: 37px;
+            br {
+                display: none;
+            }
+        }
+    }
+    .modal__heading {
+        margin-bottom: 26px;
+        br {
+            display: none;
+            @media (min-width: $tablet-width) {
+                display: block;
+            }
+        }
+    }
+}
+
+.modal-failure {
+    .modal__button {
+        width: 180px;
+        margin: 0 auto;
+        @media (min-width: $tablet-width) {
+            width: 272px;
+        }
+    }
+}

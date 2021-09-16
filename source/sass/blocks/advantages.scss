@@ -48,12 +48,18 @@
 
 @media (min-width: $tablet-width) {
     .advantages__inner-sections .advantages-section__header-content {
-        height: 256px;
         box-sizing: border-box;
         padding-top: 44px;
+        padding-bottom: 41px;
     }
     .advantages-section-bridge .advantages-section__header-content {
         order: 2;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .advantages__inner-sections .advantages-section__header-content {
+        padding-bottom: 61px;
     }
 }
 
@@ -319,7 +325,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         display: grid;
-        align-items: center;
         justify-items: center;
         background-color: #EEEEEE;
     }

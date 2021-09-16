@@ -1,0 +1,93 @@
+.contact-section {
+    margin-top: 20px;
+    padding-bottom: 11px;
+    border-bottom: 1px solid #E5E5E5;
+    .page-form__legend {
+        margin-bottom: 16px;
+        @media (min-width: $tablet-width) {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin-bottom: 21px;
+            &::before,
+            &::after {
+                content: "";
+                flex-grow: 1;
+                flex-shrink: 0;
+                height: 1px;
+                background-color: #DBDBDB;
+            }
+            &::before {
+                margin-right: 62px;
+            }
+            &::after {
+                margin-left: 62px;
+            }
+        }
+        @media (min-width: $desktop-width) {
+            margin-bottom: 73px;
+        }
+    }
+    @media (min-width: $tablet-width) {
+        width: 100%;
+        order: 3;
+        grid-column: 1/-1;
+        margin-bottom: 17px;
+        margin-top: 72px;
+        border-bottom: none;
+    }
+    @media (min-width: $desktop-width) {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 69px;
+        margin-bottom: 40px;
+    }
+}
+
+.contact-section__line {
+    @media (min-width: $desktop-width) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.contact-section__label {
+    display: block;
+    font-size: 14px;
+    margin-left: 22px;
+    margin-bottom: 8px;
+    @media (min-width: $desktop-width) {
+        margin: 0;
+        margin-right: 18px;
+        span {
+            display: none;
+        }
+    }
+}
+
+.contact-section__input {
+    position: relative;
+}
+
+.contact-section__input-content {
+    width: 100%;
+    display: flex;
+    margin-bottom: 14px;
+    @media (min-width: $tablet-width) {
+        margin-bottom: 23px;
+    }
+    @media (min-width: $desktop-width) {
+        width: 316px;
+        margin-bottom: 0;
+    }
+}
+
+.contact-section__icon-content {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E6E6E6;
+}

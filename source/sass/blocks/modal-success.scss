@@ -1,0 +1,32 @@
+.modal-success {
+    margin-top: 116px;
+    padding-top: 38px;
+    @media (min-width: $tablet-width) {
+        width: 640px;
+        margin-top: 162px;
+        padding-top: 45px;
+    }
+    @media (min-width: $desktop-width) {
+        margin-top: 93px;
+    }
+    .modal__text {
+        width: 244px;
+        margin-bottom: 39px;
+        @media (min-width: $tablet-width) {
+            width: 415px;
+            margin-bottom: 42px;
+        }
+    }
+    .modal__button {
+        width: 320px;
+        border: 20px solid #F2F2F2;
+        @media (min-width: $tablet-width) {
+            width: 640px;
+            font-size: 21px;
+            border-top: 44px solid #F2F2F2;
+            border-right: 91px solid #F2F2F2;
+            border-bottom: 44px solid #F2F2F2;
+            border-left: 91px solid #F2F2F2;
+        }
+    }
+}
